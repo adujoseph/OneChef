@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,162 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OneChef" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgOneChef" translatesAutoresizingMaskIntoConstraints="NO" id="GdM-p7-A7x">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food for everyone" translatesAutoresizingMaskIntoConstraints="NO" id="fF5-MF-lIC">
+                                <rect key="frame" x="162.5" y="50" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AI5-PX-iTd"/>
+                                    <constraint firstAttribute="width" constant="50" id="ilO-ws-o67"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXL-tl-Wxj" customClass="RoundButton" customModule="OneChef" customModuleProvider="target">
+                                <rect key="frame" x="182" y="512.33333333333326" width="50" height="50"/>
+                                <state key="normal" title="G"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JMq-Bd-yra">
+                                <rect key="frame" x="65" y="230" width="245.5" height="25.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eating good food is a possible" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAq-Lf-WGj">
+                                        <rect key="frame" x="0.0" y="0.0" width="245.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
+                                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meet the right chef for you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L13-lX-krg">
+                                <rect key="frame" x="85" y="263" width="245.33333333333334" height="25.333333333333329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eneter Username" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vmQ-fR-dqD" customClass="UITextFieldX" customModule="OneChef" customModuleProvider="target">
+                                <rect key="frame" x="20" y="382" width="362" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="bgOneChef"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JMq-Bd-yra" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5WK-wG-ew8"/>
+                            <constraint firstItem="fF5-MF-lIC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="DHe-JY-gpr"/>
+                            <constraint firstItem="jXL-tl-Wxj" firstAttribute="top" secondItem="JMq-Bd-yra" secondAttribute="bottom" constant="257" id="S3J-Xb-KF3"/>
+                            <constraint firstItem="GdM-p7-A7x" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="TUV-fD-L8S"/>
+                            <constraint firstItem="jXL-tl-Wxj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ft1-97-LVz"/>
+                            <constraint firstItem="GdM-p7-A7x" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jl9-Le-epe"/>
+                            <constraint firstItem="fF5-MF-lIC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mt1-1k-Yu6"/>
+                            <constraint firstItem="GdM-p7-A7x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qo4-fY-RUg"/>
+                            <constraint firstItem="GdM-p7-A7x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yrS-Hd-4kq"/>
+                            <constraint firstItem="JMq-Bd-yra" firstAttribute="top" secondItem="fF5-MF-lIC" secondAttribute="bottom" constant="130" id="zYC-ve-wcM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bgLabel" destination="GdM-p7-A7x" id="2fa-eY-uRB"/>
+                        <outlet property="buttonLabel" destination="jXL-tl-Wxj" id="5wy-zY-JxX"/>
+                        <outlet property="myLogo" destination="fF5-MF-lIC" id="OzY-GD-lYi"/>
+                        <outlet property="textLabel" destination="L13-lX-krg" id="0R4-29-gdL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="132.88043478260872"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="fKi-3A-eYc">
+            <objects>
+                <viewController id="wdw-Ji-sZ8" customClass="SecondViewController" customModule="OneChef" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xIM-M9-RBT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgpage2" translatesAutoresizingMaskIntoConstraints="NO" id="x3Z-Ny-RzF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oX-GM-iWH">
+                                <rect key="frame" x="42" y="80" width="291" height="467"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food1" translatesAutoresizingMaskIntoConstraints="NO" id="eJ4-OO-KhV">
+                                        <rect key="frame" x="12" y="173" width="266" height="285"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kaf-ow-npE">
+                                <rect key="frame" x="0.0" y="555" width="375" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUE-S2-6Nj">
+                                        <rect key="frame" x="160" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="upicon"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dcY-cu-rhj" firstAttribute="bottom" secondItem="1oX-GM-iWH" secondAttribute="bottom" constant="120" id="4NI-1T-VtX"/>
+                            <constraint firstItem="1oX-GM-iWH" firstAttribute="leading" secondItem="dcY-cu-rhj" secondAttribute="leading" constant="42" id="BrG-vw-52h"/>
+                            <constraint firstItem="x3Z-Ny-RzF" firstAttribute="top" secondItem="xIM-M9-RBT" secondAttribute="top" id="HLg-P4-CLm"/>
+                            <constraint firstItem="dcY-cu-rhj" firstAttribute="trailing" secondItem="1oX-GM-iWH" secondAttribute="trailing" constant="42" id="IPr-xh-AfG"/>
+                            <constraint firstItem="x3Z-Ny-RzF" firstAttribute="leading" secondItem="dcY-cu-rhj" secondAttribute="leading" id="N7D-P3-lwM"/>
+                            <constraint firstItem="1oX-GM-iWH" firstAttribute="top" secondItem="dcY-cu-rhj" secondAttribute="top" constant="60" id="QNJ-lS-Ijy"/>
+                            <constraint firstItem="x3Z-Ny-RzF" firstAttribute="bottom" secondItem="dcY-cu-rhj" secondAttribute="bottom" id="ar2-ms-4qz"/>
+                            <constraint firstItem="x3Z-Ny-RzF" firstAttribute="trailing" secondItem="dcY-cu-rhj" secondAttribute="trailing" id="bWB-fq-unB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dcY-cu-rhj"/>
+                    </view>
+                    <connections>
+                        <outlet property="ViewContainer" destination="1oX-GM-iWH" id="VdH-WM-3Vk"/>
+                        <outlet property="bgLabel" destination="x3Z-Ny-RzF" id="c5e-K9-4f4"/>
+                        <outlet property="imageViewContainer" destination="1oX-GM-iWH" id="Q8G-5j-n9f"/>
+                        <outlet property="shareButtonView" destination="Kaf-ow-npE" id="HUC-Aq-2Sk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ohv-Xe-wNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946.39999999999998" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bgOneChef" width="1280" height="854"/>
+        <image name="bgpage2" width="307.20001220703125" height="204.72000122070312"/>
+        <image name="food for everyone" width="375" height="375"/>
+        <image name="food1" width="307.20001220703125" height="205"/>
+        <image name="upicon" width="512" height="512"/>
+    </resources>
 </document>

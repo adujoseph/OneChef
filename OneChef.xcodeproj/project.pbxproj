@@ -13,6 +13,9 @@
 		04C019DA220DA2C600F8B68D /* OneChef.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04C019D8220DA2C600F8B68D /* OneChef.xcdatamodeld */; };
 		04C019DC220DA2C700F8B68D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C019DB220DA2C700F8B68D /* Assets.xcassets */; };
 		04C019DF220DA2C700F8B68D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C019DD220DA2C700F8B68D /* LaunchScreen.storyboard */; };
+		04C019E7220DB8CF00F8B68D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C019E6220DB8CF00F8B68D /* RoundButton.swift */; };
+		04C019E9220DBDD700F8B68D /* TextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C019E8220DBDD700F8B68D /* TextFieldX.swift */; };
+		04C019EB220DCEF000F8B68D /* SeconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C019EA220DCEF000F8B68D /* SeconViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		04C019DB220DA2C700F8B68D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C019DE220DA2C700F8B68D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04C019E0220DA2C700F8B68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C019E6220DB8CF00F8B68D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		04C019E8220DBDD700F8B68D /* TextFieldX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldX.swift; sourceTree = "<group>"; };
+		04C019EA220DCEF000F8B68D /* SeconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeconViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				04C019D1220DA2C600F8B68D /* AppDelegate.swift */,
 				04C019D3220DA2C600F8B68D /* ViewController.swift */,
+				04C019E6220DB8CF00F8B68D /* RoundButton.swift */,
+				04C019E8220DBDD700F8B68D /* TextFieldX.swift */,
 				04C019D5220DA2C600F8B68D /* Main.storyboard */,
 				04C019DB220DA2C700F8B68D /* Assets.xcassets */,
 				04C019DD220DA2C700F8B68D /* LaunchScreen.storyboard */,
 				04C019E0220DA2C700F8B68D /* Info.plist */,
 				04C019D8220DA2C600F8B68D /* OneChef.xcdatamodeld */,
+				04C019EA220DCEF000F8B68D /* SeconViewController.swift */,
 			);
 			path = OneChef;
 			sourceTree = "<group>";
@@ -138,7 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C019E7220DB8CF00F8B68D /* RoundButton.swift in Sources */,
+				04C019E9220DBDD700F8B68D /* TextFieldX.swift in Sources */,
 				04C019D4220DA2C600F8B68D /* ViewController.swift in Sources */,
+				04C019EB220DCEF000F8B68D /* SeconViewController.swift in Sources */,
 				04C019DA220DA2C600F8B68D /* OneChef.xcdatamodeld in Sources */,
 				04C019D2220DA2C600F8B68D /* AppDelegate.swift in Sources */,
 			);
